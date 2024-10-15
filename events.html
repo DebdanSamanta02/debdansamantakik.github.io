@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KodeinKGP Trainee Dev</title>
+    <link rel="icon" href="./images/mainlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body style="background-color: #01011b;">
+    <div class="blob">
+        <style>
+            .blob {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 600px;
+                height: 600px;
+                border-radius: 100%;
+                background-image: linear-gradient(#5be6ff 10%, #04046B 70%);
+                filter: blur(250px);
+                transition: all 450ms ease-out;
+                position: fixed;
+                pointer-events: none;
+                left: 0;
+                top: 0;
+                transform: translate(calc(-50% + 15px), -50%);
+                z-index: -1;	
+
+            }
+        </style>
+        <script>
+            var cursor=document.querySelector('.blob');
+            document.addEventListener('mousemove', function(e) {
+                var x = e.clientX;
+                var y = e.clientY;
+
+                cursor.style.transform = `translate3d(calc(${x}px - 50%), calc(${y}px - 50%), 0)`
+            });
+        </script>
+    </div>
+
+   <div class="navbar" style=
+        "background-color: rgba(1, 1, 27, 0.37);
+        padding-top: 0px;
+        padding-right: 1rem;
+        padding-bottom: 0px;
+        padding-left: 1rem;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        margin: -7px;
+        font-family: Poppins, sans-serif;">
+
+
+        <div class="title" style=
+        "box-sizing: border-box;">
+
+            <div class="logo" style=
+            "translate: none;
+            rotate: none;
+            scale: none;
+            opacity: 1;
+            transform: translate(0px, 0px);
+            display: flex;
+            align-items: center;
+            font-size: 1.2rem;
+            gap: 5px;
+            justify-content: left;">
+
+                <img src="./images/mainlogo.png" style=
+                    "height: 60px;
+                    padding: 5px;
+                    padding-top: 5px;
+                    padding-right: 5px;
+                    padding-bottom: 5px;
+                    padding-left: 5px;
+                    box-sizing: border-box;">
+                <h3 style=
+                    "color: #fff;
+                    display: block;
+                    margin-block-start: 1.33em;
+                    margin-block-end: 1.33em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                    font-weight: bold;"> KodeinKGP</h3>
+            </div>
+        </div>
+        <div class="Navigation" style=
+            "display: block;
+            margin-left: auto;
+            min-width: 26vw;
+            box-sizing: border-box;">
+
+            <div class="mainNavigation" style=
+                "align-items: center;
+                display: flex;
+                flex-direction: row;
+                gap: 4rem;
+                box-sizing: border-box;">
+
+                <div class="mainNavBar" style=
+                    "display: flex;
+                    margin-right: -20px;
+                    box-sizing: border-box;">
+    
+                    <li style=
+                        "translate: none;
+                        rotate: none;
+                        scale: none;
+                        opacity: 1;
+                        transform: translate(0px, 0px);
+                        list-style: none;">
+
+                        <span class="link-tag">
+                            <a class="link" href="./home.html" style=
+                            "color: #fff;
+                            font-weight: 500;
+                            letter-spacing: .5px;
+                            padding: 20px 25px 25px;
+                            font-size: 1.2rem;
+                            font-weight: 1;
+                            padding: 0 1.5rem;
+                            text-decoration: none;">
+                            Home
+                                <style>
+                                    .link-tag:hover{
+                                        box-shadow: 5px 5px 90px 20px #5be6ff;
+                                        border-radius: 10px;
+                                        border-color: #11e3fb;
+                                        border-width: 1px;
+                                    }
+                                </style>
+                            </a>
+                        </span>
+                    </li>
+
+                    <li style=
+                        "translate: none;
+                        rotate: none;
+                        scale: none;
+                        opacity: 1;
+                        transform: translate(0px, 0px);
+                        list-style: none;">
+
+                        <span class="link-tag">
+                            <a class="link" href="./pdsbank.html" style=
+                            "color: #fff;
+                            font-weight: 500;
+                            letter-spacing: .5px;
+                            padding: 20px 25px 25px;
+                            font-size: 1.2rem;
+                            font-weight: 1;
+                            padding: 0 1.5rem;
+                            text-decoration: none;">PDS_Bank</a>
+                        </span>
+                    </li>
+
+                    <li style=
+                        "translate: none;
+                        rotate: none;
+                        scale: none;
+                        opacity: 1;
+                        transform: translate(0px, 0px);
+                        list-style: none;">
+
+                        <span class="link-tag">
+                            <a class="link" href="./articles.html" style=
+                            "color: #fff;
+                            font-weight: 500;
+                            letter-spacing: .5px;
+                            padding: 20px 25px 25px;
+                            font-size: 1.2rem;
+                            font-weight: 1;
+                            padding: 0 1.5rem;
+                            text-decoration: none;">Articles</a>
+                        </span>
+                    </li>
+
+                    <li style=
+                        "translate: none;
+                        rotate: none;
+                        scale: none;
+                        opacity: 1;
+                        transform: translate(0px, 0px);
+                        list-style: none;">
+
+                        <span class="link-tag">
+                            <a class="link" href="./teams.html" style=
+                            "color: #fff;
+                            font-weight: 500;
+                            letter-spacing: .5px;
+                            padding: 20px 25px 25px;
+                            font-size: 1.2rem;
+                            font-weight: 1;
+                            padding: 0 1.5rem;
+                            text-decoration: none;">Teams</a>
+                        </span>
+                    </li>
+
+                    <li style=
+                        "translate: none;
+                        rotate: none;
+                        scale: none;
+                        opacity: 1;
+                        transform: translate(0px, 0px);
+                        list-style: none;">
+                        
+                        <span class="link-tag">
+                            <a class="link" href="./events.html" style=
+                            "color: #fff;
+                            font-weight: 500;
+                            letter-spacing: .5px;
+                            padding: 20px 25px 25px;
+                            font-size: 1.2rem;
+                            font-weight: 1;
+                            padding: 0 1.5rem;
+                            text-decoration: none;">Events</a>
+                        </span>
+                    </li>
+                </div>
+            </div>
+        </div>
+   </div> 
+
+
+   <div class="Desc" style=
+        "box-sizing: border-box;">
+
+        <div class="landing" style=
+            "display: flex;
+            flex-direction: row;
+            height: 100%;
+            overflow: hidden;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif">
+
+            <div class="contents" style=
+            "display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: large;
+            padding: 30px;
+            text-align: left;">
+
+                <h1 class="paragraph">
+                    <style>
+                        .paragraph{
+                            text-align: center;
+                            font-size: 75px;
+                            font-family: Poppins, sans-serif;
+                            color: #11e3fb;
+                        }
+                    </style>
+                    NO CONTENT YET
+                </h1>
+
+            </div>
+        </div>
+   </div>
+
+
+    <div class="footer" style=
+        "align-items: center;
+        background-color: initial;
+        border: 3px solid #01011b;
+        border-top-color: #3dc4d4;
+        color: #fff;
+        display: flex;  
+        flex-wrap: wrap;
+        font-family: Poppins, sans-serif;
+        justify-content: space-between;
+        margin-top: 2rem;
+        text-align: left !important;
+        box-sizing: border-box;
+        margin: -10px;
+        padding: 0;
+        font-family: Poppins, sans-serif;
+        position: fixed;
+        width: 101%;
+        left: 0;
+        bottom: 0;">
+        
+        <div class="footer1", style=
+            "margin-top: 0px;
+            margin-right: 1rem;
+            margin-bottom: 0px;
+            margin-left: 1rem;
+            padding-top: 0.5rem;
+            padding-right: 0px;
+            padding-bottom: 0.5rem;
+            padding-left: 0px;
+            box-sizing: border-box;
+            display: block;">
+
+            <div class="header" style=
+                "box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                display: block;">
+                <img src="./images/mainlogo.png" width="50" height="50">
+                <h2 class="body" style=
+                    "display: block;
+                    font-size: 1.5em;
+                    margin-block-start: 0.83em;
+                    margin-block-end: 0.83em;
+                    margin-inline-start: 0px;
+                    margin-inline-end: 0px;
+                    font-weight: bold;
+                    unicode-bidi: isolate;
+                    margin-top: .5rem;"> KodeinKGP </h2>
+            </div>
+            <div class="desc" style=
+                "box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                display: block;
+                margin-top: 1rem;">
+                <p class="address">
+                    Indian Institute of Technology, Kharagpur
+                    <br>
+                    West Bengal - 721302
+                </p>
+            </div>
+            <div class="icons" style=
+                "box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                margin-top: 1rem;
+                margin-bottom: 2rem;">
+                <a href="https://www.facebook.com/kodeinkgp?mibextid=ZbWKwL" >
+                    <img src="./images/icons/fb.png" width="30" height="30" style="padding-right: .5rem;">
+                </a>
+                <a href="https://www.instagram.com/kodeinkgp_iitkgp?igsh=cmhyMXM3YTA5YzZm" >
+                    <img src="./images/icons/insta.png" width="30" height="30" style="padding-right: .5rem;">
+                </a>
+                <a href="https://www.linkedin.com/company/kodeinkgp/" >
+                    <img src="./images/icons/linkedin.png" width="30" height="30" style="padding-right: .5rem;">
+                </a>
+                <a href="https://medium.com/@kodeinkgp" >
+                    <img src="./images/icons/medium.png" width="30" height="30" style="padding-right: .5rem;">
+                </a>
+                <a href="https://chat.whatsapp.com/IFt69sSqZsu7FlRWl3EIbk" >
+                    <img src="./images/icons/whatsapp.png" width="30" height="30" style="padding-right: .5rem;">
+                </a>
+            </div>
+        </div>
+
+        <div class="footer2" style=
+            "margin-top: 0px;
+            margin-right: 1rem;
+            margin-bottom: 0px;
+            margin-left: 1rem;
+            padding-top: 0.5rem;
+            padding-right: 0px;
+            padding-bottom: 0.5rem;
+            padding-left: 0px;
+            box-sizing: border-box;
+            display: block;">
+            <div class="desc" style=
+                "box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                display: block;
+                margin-top: .6rem;
+                margin-bottom: .6rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                padding-bottom: 1rem;"> Blockchain</div>
+            <div class="link" style=
+            "font-size: 1.2rem;
+            font-weight: 700;
+            padding-bottom: .5rem;">
+                <a href="https://www.youtube.com/watch?v=gyMwXuJrbJQ" style=
+                "color: wheat;
+                text-decoration: none;
+                font-weight: 500;">freeCodeCamp</a>
+            </div>
+            <div class="link" style=
+            "font-size: 1.2rem;
+            font-weight: 700;
+            padding-bottom: .5rem;">
+                <a href="https://www.youtube.com/@CodeEater21/videos" style=
+                "color: wheat;
+                text-decoration: none;
+                font-weight: 500;">CodeEater</a>
+            </div>
+            <div class="link" style=
+            "font-size: 1.2rem;
+            font-weight: 700;
+            padding-bottom: .5rem;">
+                <a href="https://www.youtube.com/@WhiteboardCrypto" style=
+                "color: wheat;
+                text-decoration: none;
+                font-weight: 500;">WhiteboardCrypto</a>
+            </div>
+            <div class="link" style=
+            "font-size: 1.2rem;
+            font-weight: 700;
+            padding-bottom: .5rem;">
+                <a href="https://www.youtube.com/@Finematics" style=
+                "color: wheat;
+                text-decoration: none;
+                font-weight: 500;">Finematics</a>
+            </div>
+        </div>
+
+        <div class="footer3" style=
+            "margin-top: 0px;
+            margin-right: 1rem;
+            margin-bottom: 0px;
+            margin-left: 1rem;
+            padding-top: 0.5rem;
+            padding-right: 0px;
+            padding-bottom: 0.5rem;
+            padding-left: 0px;
+            box-sizing: border-box;
+            display: block;">
+            <div class="desc" style=
+                "box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                display: block;
+                margin-top: .6rem;
+                margin-bottom: .6rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                padding-bottom: 1rem;"> Machine Learning</div>
+            <div class="link" style=
+            "font-size: 1.2rem;
+            font-weight: 700;
+            padding-bottom: .5rem;">
+                <a href="https://www.youtube.com/@Deeplearningai" style=
+                "color: wheat;
+                text-decoration: none;
+                font-weight: 500;">DeepLearningAI</a>
+            </div>
+            <div class="link" style=
+            "font-size: 1.2rem;
+            font-weight: 700;
+            padding-bottom: .5rem;">
+                <a href="https://www.youtube.com/@SirajRaval/about" style=
+                "color: wheat;
+                text-decoration: none;
+                font-weight: 500;">Siraj Raval</a>
+            </div>
+            <div class="link" style=
+            "font-size: 1.2rem;
+            font-weight: 700;
+            padding-bottom: .5rem;">
+                <a href="https://www.youtube.com/@coreyms/about" style=
+                "color: wheat;
+                text-decoration: none;
+                font-weight: 500;">Corey Schafer</a>
+            </div>
+            <div class="link" style=
+            "font-size: 1.2rem;
+            font-weight: 700;
+            padding-bottom: .5rem;">
+                <a href="https://www.youtube.com/@sentdex/playlists" style=
+                "color: wheat;
+                text-decoration: none;
+                font-weight: 500;">sentdex</a>
+        </div>
+        </div>
+
+        <div class="footer4" style=
+            "margin-top: 0px;
+            margin-right: 1rem;
+            margin-bottom: 0px;
+            margin-left: 1rem;
+            padding-top: 0.5rem;
+            padding-right: 0px;
+            padding-bottom: 0.5rem;
+            padding-left: 0px;
+            box-sizing: border-box;
+            display: block;">
+            <div class="desc" style=
+                "box-sizing: border-box;
+                padding: 0;
+                margin: 0;
+                display: block;
+                margin-top: .6rem;
+                margin-bottom: .6rem;
+                font-size: 1.2rem;
+                font-weight: 700;
+                padding-bottom: 1rem;"> Web Development</div>
+            <div class="link" style=
+            "font-size: 1.2rem;
+            font-weight: 700;
+            padding-bottom: .5rem;">
+                <a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg" style=
+                "color: wheat;
+                text-decoration: none;
+                font-weight: 500;">CodeWithHarry</a>
+            </div>
+            <div class="link" style=
+            "font-size: 1.2rem;
+            font-weight: 700;
+            padding-bottom: .5rem;">
+                <a href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n" style=
+                "color: wheat;
+                text-decoration: none;
+                font-weight: 500;">ApnaCollege</a>
+            </div>
+            <div class="link" style=
+            "font-size: 1.2rem;
+            font-weight: 700;
+            padding-bottom: .5rem;">
+                <a href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G" style=
+                "color: wheat;
+                text-decoration: none;
+                font-weight: 500;">net ninja</a>
+            </div>
+            <div class="link" style=
+                "font-size: 1.2rem;
+                font-weight: 700;
+                padding-bottom: .5rem;">
+                    <a href="https://www.youtube.com/playlist?list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU" style=
+                    "color: wheat;
+                    text-decoration: none;
+                    font-weight: 500;">Traversy Media</a>
+        </div>
+</body>
+</html>

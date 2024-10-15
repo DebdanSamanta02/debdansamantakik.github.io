@@ -1,0 +1,27 @@
+.navbar .title .logo {
+  width: 60px;
+  height: auto;
+  translate: none;
+  rotate: none;
+  scale: none;
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+.h1 {
+  font-family: "Poppins", sans-serif;
+}
+.h2 {
+  font-family: "Poppins", sans-serif;
+}
+.h3 {
+  font-family: "Poppins", sans-serif;
+}
+.h4 {
+  font-family: "Poppins", sans-serif;
+}
+.h5 {
+  font-family: "Poppins", sans-serif;
+}
+.p {
+  font-family: "Poppins", sans-serif;
+}
